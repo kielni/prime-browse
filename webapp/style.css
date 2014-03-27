@@ -1,0 +1,166 @@
+.info {
+  margin-bottom: 10px;
+}
+
+/***************** Search Section ****************/
+.record {
+  border-bottom: #eee 1px solid;
+  padding: 5px;
+}
+
+.controls .query-here {
+  width: 500px;
+  margin: auto;
+}
+
+.controls .query-here .text-query input {
+  width: 400px;
+  /* fix offset bug ...*/
+  margin-left: -4px;
+}
+
+.pager-here {
+  width: 200px;
+  margin: auto;
+}
+
+.recline-pager {
+  float: left;
+  margin: auto;
+  display: block;
+  margin-left: 20px;
+}
+
+.recline-pager .pagination input {
+  width: 30px;
+  height: 18px;
+  padding: 2px 4px;
+  margin: 0;
+  margin-top: -4px;
+}
+
+.recline-pager .pagination a {
+  line-height: 26px;
+  padding: 0 6px;
+}
+
+.body {
+  clear: both;
+}
+
+.results {
+  border-left: #eee 1px solid;
+  padding-left: 20px;
+  float: left;
+  width: 700px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  float: left;
+  padding-left: 10px;
+}
+
+ul.facet-items {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.record ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+.record .poster {
+    float: left;
+    width: 170px;
+}
+.record .description {
+    float: left;
+    width: 500px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+p {
+    margin: 0 0 5px 0;
+}
+
+.ui-button-text {
+    font-weight: bold;
+}
+.ui-widget {
+    font-size: 9px;
+}
+
+ul.facet-items {
+    padding-left: 7px;
+    margin-top: 0;
+}
+
+body {
+    padding-top: 0;
+}
+
+.text-query {
+    float: left;
+}
+
+h2 {
+    margin: 0;
+}
+
+.filters label, .range-label {
+    font-weight: bold;
+}
+
+#filters {
+    width: 90%
+}
+
+.range-filter, #facets {
+    padding-top: 10px;
+}
+
+.pagination ul {
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0;
+    list-style: disc outside none;
+    padding: 0;
+}
+
+.pagination li {
+    display: inline;
+}
+
+.pagination .active a {
+    background-color: #F5F5F5;    
+}
+
+.pagination a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #DDDDDD;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    float: left;
+}
+
+.pq-label.ui-state-active {
+    background: none;
+    background-color: #ff9900;
+}
+
+.kq-label.ui-state-active {
+    background: none;
+    background-color: #ccffcc;
+}
