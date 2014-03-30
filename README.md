@@ -7,30 +7,36 @@ useful ways to filter results.  I wrote some scripts to scrape the data from
 Amazon's website, put it into an Elasticsearch server, and make it browse-able
 with a simple web front end.
 
+![screenshot](kielni.github.com/prime-browse/img/screenshot.png)
+
 ## Setup
 
-You will need:
+Requirements:
 
-   a web server
-   Recline library (https://github.com/okfn/recline)
-   Elasticsearch backend (https://github.com/okfn/elasticsearch.js/)
-   Elasticsearch (http://www.elasticsearch.org/)
-   Python 2.7.x with BeautifulSoap, pyelasticsearch, and selenium modules
+  * a web server
+  * Recline library (https://github.com/okfn/recline)
+  * Elasticsearch backend (https://github.com/okfn/elasticsearch.js/)
+  * Elasticsearch (http://www.elasticsearch.org/)
+  * Python 2.7.x with BeautifulSoap, pyelasticsearch, and selenium modules
 
 ### Elasticsearch setup
 
-   create the `prime` index
-   run `setup.py` to create the `video` mapping 
-   run `prime_video.py` to scrape data from Amazon's site into Elasticsearch index; re-run weekly to get new data
-   run `add_metadata.py` to update video documents with metadata; repeat until no records have a missing metadata field
+  * create the `prime` index
+  * run `setup.py` to create the `video` mapping 
+  * run `prime_video.py` to scrape data from Amazon's site into Elasticsearch index; re-run weekly to get new data
+  * run `add_metadata.py` to update video documents with metadata; repeat until no records have a missing metadata field
    
 
 ### webapp setup
 
-   copy `webapp` directory to web server
-   copy recline to `webapp_dir/lib/`
-   copy elasticsearch.js to `webapp_dir/lib/`
-   point browser to `webserver/index.html`
+  * copy `webapp` directory to web server
+  * copy recline to `webapp_dir/lib/`
+  * copy elasticsearch.js to `webapp_dir/lib/`
+  * point browser to `webserver/index.html`
 
+## TODO
 
+  * get data from recently added list
+  * videos get removed from Prime all the time; need to periodically re-check status and remove if no longer available
 
+   
