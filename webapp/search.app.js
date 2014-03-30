@@ -48,7 +48,7 @@ jQuery(function($) {
   });
   searchView.render();
 
-  dataset.queryState.set({size: 20 },{silent: true});
+  dataset.queryState.set({size: 100 },{silent: true});
   dataset.queryState.set({sort: { 'imdbRating': { order: 'desc' } } },{silent: true});
   dataset.queryState.addFacet('queue', 2, true);
   dataset.queryState.addFacet('Genre', 20, true);
@@ -57,6 +57,12 @@ jQuery(function($) {
     field: 'year', 
     from: 1994,
     to: 2014
+  });
+  dataset.queryState.addFilter({
+    type: 'range', 
+    field: 'Runtime', 
+    from: 75,
+    to: 180
   });
   dataset.queryState.addFilter({
     not: 'true',

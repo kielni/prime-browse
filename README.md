@@ -36,7 +36,13 @@ Requirements:
 
 ## TODO
 
-  * get data from recently added list
-  * videos get removed from Prime all the time; need to periodically re-check status and remove if no longer available
+  * scroll left nav with content
+  * color queue button on click in Chrome
+  * remove from queue filtered list on de-select
+  * hide regular version if HD version available
+  * add not found genre if no metadata
+  * better metadata?
+  * get data from recently added (7 days)
+  * verify that videos are still available in Prime
 
    
