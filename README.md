@@ -7,7 +7,7 @@ useful ways to filter results.  I wrote some scripts to scrape the data from
 Amazon's website, put it into an Elasticsearch server, and make it browse-able
 with a simple web front end.
 
-![screenshot](kielni.github.com/prime-browse/img/screenshot.png)
+![screenshot](https://github.com/kielni/prime-browse/blob/master/img/screenshot.png "Screenshot")
 
 ## Setup
 
